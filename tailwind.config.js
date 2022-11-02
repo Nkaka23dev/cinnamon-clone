@@ -5,7 +5,14 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'mont-bold':['mont-bold'],
+        'mont-semiBold':['mont-semibold'],
+        'mont-regular': ['mont-regular'],
+        'mont-heavy': ['mont-heavy'],
+      }
+    },
   },
   plugins: [],
 }
