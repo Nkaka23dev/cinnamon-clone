@@ -11,6 +11,9 @@ module.exports = {
         'mont-semiBold':['mont-semibold'],
         'mont-regular': ['mont-regular'],
         'mont-heavy': ['mont-heavy'],
+      },
+      color:{
+        primary: "rgb(81, 53, 255)"
       }
     },
   },
