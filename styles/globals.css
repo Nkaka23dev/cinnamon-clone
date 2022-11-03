@@ -16,7 +16,9 @@
     @apply bg-indigo-500 mt-4 py-2 px-6 rounded text-white  font-bold cursor-pointer tracking-wider
   }
 }
-
+input[type="text"]:focus ~.input-text{
+  @apply text-[#5135ff] text-sm font-semibold transform -translate-y-4 -translate-x-1
+}
 @font-face {
   font-family:"mont-bold";
   src: url("/MontBold.woff2");
@@ -124,11 +126,6 @@
   font-size: 54px;
   line-height: 70px;
   margin-bottom: 32px;
-}
-.css-nqi6vo {
-  color: #525252;
-  font-size: 16px;
-  line-height: 26px;
 }
 .css-dysplg {
   font-family: 'MontBold';

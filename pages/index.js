@@ -1,16 +1,19 @@
-import Image from 'next/image'
 import Link from 'next/link'
+import Image from 'next/image'
 import Button from '../components/buttons/Button'
 import Hero from '../components/Hero'
 import Footer from '../components/layout/Footer'
 import Header from '../components/layout/Header'
+import Position from '../components/sections/position'
+import Work from '../components/sections/work'
 import SubHero from '../components/SubHero'
+import Project from '../components/sections/project'
 
 export default function Home () {
   return (
     <div className='overflow-hidden'>
       {/* Header section */}
-      <Header/>
+      <Header />
       {/* Hero section */}
       <Hero
         className='bg-[#91F1C3]'
@@ -133,18 +136,17 @@ export default function Home () {
           </div>
         </div>
       </section>
-      <section></section>
       {/* Next section */}
-      <section className='bg-[#F6F6F6] relative'>
-        <div className='max-w-6xl mx-auto py-40'>
-          <div className='max-w-5xl flex justify-between gap-52'>
-            <div className='space-y-5 w-2/4'>
-              <h1 className='css-8x5vz5 font-mont-bold'>
+      <section className='bg-[#F6F6F6] relative py-20 lg:py-40'>
+        <div className='max-w-[70rem] mx-auto'>
+          <div className='max-w-5xl flex flex-col lg:flex-row justify-between gap-52'>
+            <div className='space-y-5 lg:w-2/4 px-5 lg:px-0 '>
+              <h1 className='text-4xl lg:text-[3.275rem] lg:leading-[4.3rem] font-mont-bold'>
                 Agile team<br></br> on demand
               </h1>
             </div>
-            <div className='space-y-5 w-2/3'>
-              <h1 className='css-nqi6vo max-w-sm font-mont-semiBold'>
+            <div className='space-y-5 px-5 lg:px-0 lg:w-2/3 mt-15 '>
+              <h1 className='text-[1.05rem]  text-[#525252] lg:max-w-sm font-mont-regular pt-20 lg:pt-0'>
                 By hiring and managing talented people with skills specific to
                 your project, we build you a team that’s accomplished, agile and
                 scalable in both directions.
@@ -156,7 +158,7 @@ export default function Home () {
         <Image
           src='/images/image 4.png'
           alt='Picture of the author'
-          className='absolute right-0 top-72'
+          className='absolute right-28 scale-90 lg:scale-100 lg:right-0 top-52 lg:top-72'
           width={350}
           height={350}
         />
@@ -164,18 +166,19 @@ export default function Home () {
 
       {/* next section */}
       <section className='relative'>
-        <div className='max-w-[70rem] mx-auto py-36 flex justify-between'>
+        <div className='max-w-[70rem] mx-auto py-36 flex flex-col lg:flex-row justify-between'>
           {/* First grid item */}
-          <div className='space-y-10 w-2/3'>
-            <h1 className='text-4xl font-mont-bold'>
-              They’re consistent, and the communication is good.
+          <div className='space-y-10 px-5 lg:px-0 lg:w-2/3'>
+            <h1 className='text-3xl lg:text-4xl font-mont-bold'>
+              They’re consistent, and <br className='block lg:hidden'></br> the
+              communication is <br className='block lg:hidden'></br> good.
             </h1>
-            <h4 className='font-mont-regular text-gray-700 max-w-2xl leading-7 '>
+            <h4 className='font-mont-regular tracking-wide text-gray-700 max-w-2xl leading-10 lg:leading-7'>
               When I have a deadline, they would work extra hours on the weekend
               and after hours. Cinnamon gives the impression of being a smaller
               team that’s focused on customers.
             </h4>
-            <div className='flex gap-8'>
+            <div className='flex lg:flex-row flex-col gap-3 lg:gap-8'>
               <Image
                 src='/images/man1.png'
                 alt='Picture of the author'
@@ -189,7 +192,7 @@ export default function Home () {
               </div>
             </div>
             {/* arroe div */}
-            <div className='flex gap-14'>
+            <div className='mb-10 lg:mb-0 flex gap-14'>
               <Image
                 src='/images/arrow_left.png'
                 alt='Picture of the author'
@@ -207,12 +210,12 @@ export default function Home () {
             </div>
           </div>
           {/* next div */}
-          <div className='w-1/3 flex'>
-            <div className='ml-auto flex flex-col justify-between'>
+          <div className='lg:w-1/3 flex'>
+            <div className='lg:ml-auto ml-6 mt-10 lg:mt-0 flex flex-col justify-between'>
               <Image
                 src='/images/ping.png'
                 alt='Picture of the author'
-                className='mt-16'
+                className='mt-16 hidden lg:block'
                 width={200}
                 height={200}
               />
@@ -236,17 +239,17 @@ export default function Home () {
         </div>
       </section>
       {/* next section */}
-      <section className='relative bg-[#F6F6F6]'>
-        <div className='max-w-[70rem] mx-auto py-56 flex justify-between'>
+      <section className='relative lg:h-full bg-[#F6F6F6]'>
+        <div className='max-w-[70rem] mx-auto px-6 lg:px-0 py-10 lg:py-56 flex justify-between'>
           {/* First grid item */}
-          <div className='space-y-10 w-2/3'>
-            <h1 className='text-5xl font-mont-bold'>Who we are</h1>
+          <div className='lg:space-y-10 lg:w-2/3'>
+            <h1 className='text-4xl lg:text-5xl font-mont-bold'>Who we are</h1>
             <h4 className='font-mont-regular text-gray-700 max-w-2xl leading-7 '>
               Meet our international teams made up of 86 <br></br> innovators,
               branched into 8 departments, that <br></br> influence the market
               throughout 20 different countries.
             </h4>
-            <div className='flex justify-between py-8 w-4/5'>
+            <div className='hidden lg:flex  justify-between py-8 lg:w-4/5'>
               <div className='space-y-7'>
                 <h1 className='text-xl font-mont-bold'>Product design</h1>
                 <h1 className='text-xl font-mont-bold'>Web development</h1>
@@ -262,7 +265,7 @@ export default function Home () {
               </div>
             </div>
             {/* arroe div */}
-            <div className='flex gap-14'>
+            <div className='flex mt-[27rem] lg:mt-0 lg:gap-14'>
               <Button name='Read About Us' />
             </div>
           </div>
@@ -271,110 +274,15 @@ export default function Home () {
         <Image
           src='/images/man2.png'
           alt='Picture of the author'
-          className='absolute right-0 top-[25%]'
+          className='absolute right-[9.5rem] lg:right-0 top-[20%] lg:top-[25%] scale-75 lg:scale-100'
           width={350}
           height={350}
         />
       </section>
-      {/* Next section */}
-      <section className='bg-white py-40  relative '>
-        <div className='max-w-[70rem] mx-auto flex justify-start'>
-          <div className='max-w-5xl flex items-start justify-between gap-36'>
-            <Image
-              src='/images/cinama1.png'
-              alt='Picture of the author'
-              className=''
-              width={300}
-              height={300}
-            />
-            <div className='space-y-8 ml-auto w-full '>
-              <h1 className='css-nqi6vo max-w-sm font-mont-semiBold'>
-                Seize the unique opportunity to participate<br></br> in a wide
-                range of courses conducted by<br></br> professionals with an
-                impeccable<br></br> reputation in the digital industry.
-              </h1>
-              <Button name='See how it works' />
-            </div>
-          </div>
-        </div>
-        <img
-          src='/images/cinama2.png'
-          className='top-40 absolute h-[22rem] w-[35rem] right-0 bottom-0'
-        />
-      </section>
-      {/* next section */}
-      <section className='background-image py-24'>
-        <div className='max-w-[70rem] mx-auto pt-[5rem] flex justify-between'>
-          <div className='text-white space-y-8 w-3/5'>
-            <h1 className='text-6xl tracking-wide font-bold font-mont-bold'>
-              We’re growing
-            </h1>
-            <div className='space-y-5'>
-              <h1 className='css-nqinkkkk mb-5 max-w-[28rem] font-mont-semiBold'>
-                Jump on board with Cinnamon and get the privilege of working on
-                challenging projects for leading global companies! Make the
-                world a better, more connected place.
-              </h1>
-              <Button name='See All Positions' />
-            </div>
-          </div>
-          <div className='text-white mt-7 flex flex-col w-2/5 '>
-            <div>
-              <div className='flex w-full justify-between'>
-                <h1 className='text-2xl tracking-wide text-[#f9f9f9] font-mont-bold'>
-                  Android Developer
-                </h1>
-                <div className='flex'>
-                  <Image
-                    src='/images/arrowRightWhite.png'
-                    alt='Picture of the author'
-                    className='m-auto'
-                    width={50}
-                    height={45}
-                  />
-                </div>
-              </div>
-              <div className='mt-7 h-[0.7px] w-full bg-[#6b6868]'></div>
-            </div>
-            {/* second dic */}
-            <div className='py-5'>
-              <div className='flex w-full justify-between'>
-                <h1 className='text-2xl tracking-wide text-[#f9f9f9]  font-mont-bold'>
-                  Android Developer
-                </h1>
-                <div className='flex'>
-                  <Image
-                    src='/images/arrowRightWhite.png'
-                    alt='Picture of the author'
-                    className='m-auto'
-                    width={50}
-                    height={45}
-                  />
-                </div>
-              </div>
-              <div className='mt-7 h-[0.7px] w-full bg-[#6b6868]'></div>
-            </div>
-            {/* second div */}
-            <div>
-              <div className='flex w-full justify-between'>
-                <h1 className='text-2xl text-[#f9f9f9] tracking-wide font-mont-bold'>
-                  Backend Development Team Lead
-                </h1>
-                <div className='flex'>
-                  <Image
-                    src='/images/arrowRightWhite.png'
-                    alt='Picture of the author'
-                    className='m-auto'
-                    width={50}
-                    height={45}
-                  />
-                </div>
-              </div>
-              <div className='mt-7 h-[0.7px] w-full bg-[#6b6868]'></div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Work section section */}
+      <Work />
+      {/* work section ends */}
+      <Position />
       {/* next section */}
 
       <section className='max-w-[70rem] mx-auto flex flex-col py-36'>
@@ -585,26 +493,9 @@ export default function Home () {
           </div>
         </div>
       </section>
-
-      <section className='bg-[#F6F6F6] pt-20 pb-[15rem] relative'>
-        <div className='max-w-[70rem] mx-auto flex'>
-          <div className='m-auto flex flex-col items-center'>
-            <h1 className='pb-5 text-[3.4rem] font-mont-bold text-center leading-[5rem]'>
-              Have a project in mind? <br></br> Let's work together.
-            </h1>
-            <Button name='Contact us' />
-          </div>
-        </div>
-        <Image
-          src='/images/cinama.png'
-          alt='Picture of the author'
-          className='absolute top-[13rem]'
-          width={450}
-          height={450}
-        />
-      </section>
-  {/* Next Section */}
-  <Footer/>
+      <Project />
+      {/* Next Section */}
+      <Footer />
     </div>
   )
 }
