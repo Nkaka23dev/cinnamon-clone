@@ -2,8 +2,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Button from '../components/Button'
 import Hero from '../components/Hero'
-import Footer from '../components/layout/footer'
-import NavBar from '../components/NavBar'
+import Footer from '../components/layout/Footer'
+import NavBar from '../components/layout/NavBar'
 import SubHero from '../components/SubHero'
 
 export default function Home () {
