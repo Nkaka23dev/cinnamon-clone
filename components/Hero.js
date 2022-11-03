@@ -2,8 +2,8 @@ import Image from 'next/image'
 export default function Hero (props) {
     return(
      <>
-    <section className="flex pt-10 pb-4 group">
-    <div className={`max-w-[73rem] h-[85vh] 2xl:h-full flex ${props.className} overflow-hidden m-auto `}>
+    <section className="flex pb-4 pt-24 lg:pt-40 group">
+    <div className={`max-w-[77rem] mx-4 lg:m-auto lg:h-full flex ${props.className} overflow-hidden`}>
     <Image
       src={props.img}
       alt="Picture of the author"

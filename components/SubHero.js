@@ -1,8 +1,7 @@
-import Image from 'next/image'
 export default function SubHero (props) {
     return(
      <>
-    <section className="pt-4 pb-24 max-w-[68.3rem] mx-auto">
+    <section className="pt-4 max-w-[68.3rem] mx-4 lg:m-auto">
     <div className='flex flex-col gap-6 items-start'>
     <div className='flex gap-10'>
         <span className='text-[#666666] text-sm font-semibold'>{props.heading1}</span>

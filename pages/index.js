@@ -1,31 +1,16 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import Button from '../components/Button'
+import Button from '../components/buttons/Button'
 import Hero from '../components/Hero'
 import Footer from '../components/layout/Footer'
-import NavBar from '../components/layout/NavBar'
+import Header from '../components/layout/Header'
 import SubHero from '../components/SubHero'
 
 export default function Home () {
   return (
     <div className='overflow-hidden'>
       {/* Header section */}
-      <section className='background-image'>
-        <NavBar />
-        <div className='max-w-6xl mx-auto pt-[5rem]'>
-          <div className='py-32 space-y-5'>
-            <h3 className='title tracking-wide font-mont-heavy text-white'>
-              Results focused design &<br></br>
-              development agency.
-            </h3>
-            <p className='sub-title text-2xl font-mont-semiBold text-white'>
-              Extend your team with our high performing specialists or hire us
-              to shape your product from scratch. Either way, we’ll get your
-              product off the ground and build a momentum for your success.
-            </p>
-          </div>
-        </div>
-      </section>
+      <Header/>
       {/* Hero section */}
       <Hero
         className='bg-[#91F1C3]'
@@ -70,16 +55,16 @@ export default function Home () {
         title2='The largest ukulele tabs archive'
         content='Ukulele is the number one ukulele community, where players of any level can find the most complete tabs and chords. Cinnamon offered a complete platform redesign including expansions and new features, focusing on keeping the user longer on the website.'
       />
-      <section className='background-image py-24'>
-        <div className='max-w-6xl mx-auto pt-[5rem] flex justify-between'>
-          <div className='text-white w-2/5'>
-            <h1 className='text-5xl tracking-wide font-bold font-mont-bold'>
+      <section className='background-image mt-20 lg:mt-40 py-8 lg:py-24'>
+        <div className='max-w-6xl mx-auto pt-[5rem] flex flex-col lg:flex-row justify-between'>
+          <div className='text-white w-full lg:w-2/5'>
+            <h1 className='text-4xl px-5 lg:px-0 lg:text-5xl tracking-wide font-bold font-mont-bold mb-12 lg:mb-0 '>
               Our services
             </h1>
           </div>
-          <div className='text-white w-3/5 grid grid-cols-2 gap-24'>
+          <div className='text-white px-5 lg:px-0  w-3/5 grid grid-cols-1 lg:grid-cols-2 gap-24'>
             {/* First grid item */}
-            <div className='space-y-5'>
+            <div className='space-y-7 lg:space-y-5'>
               <Image
                 src='/images/s_image3.png'
                 alt='Picture of the author'
