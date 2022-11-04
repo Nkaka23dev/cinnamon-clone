@@ -11,7 +11,7 @@ export default function Header (props) {
               Results focused design &<br></br>
               development agency.
             </h3>
-            <p className='text-[#CFCFCF] text-2xl max-w-[48rem] font-mont-regular text-white'>
+            <p className='text-[#CFCFCF] text-[1.3rem] max-w-[40rem] font-mont-regular text-white'>
               Extend your team with our high performing specialists or hire us
               to shape your product from scratch. Either way, we’ll get your
               product off the ground and build a momentum for your success.

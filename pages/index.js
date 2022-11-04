@@ -8,6 +8,8 @@ import Position from '../components/sections/position'
 import Work from '../components/sections/work'
 import SubHero from '../components/SubHero'
 import Project from '../components/sections/project'
+import Team from '../components/sections/Team'
+import About from '../components/sections/About'
 
 export default function Home () {
   return (
@@ -136,35 +138,9 @@ export default function Home () {
           </div>
         </div>
       </section>
-      {/* Next section */}
-      <section className='bg-[#F6F6F6] relative py-20 lg:py-40'>
-        <div className='max-w-[70rem] mx-auto'>
-          <div className='max-w-5xl flex flex-col lg:flex-row justify-between gap-52'>
-            <div className='space-y-5 lg:w-2/4 px-5 lg:px-0 '>
-              <h1 className='text-4xl lg:text-[3.275rem] lg:leading-[4.3rem] font-mont-bold'>
-                Agile team<br></br> on demand
-              </h1>
-            </div>
-            <div className='space-y-5 px-5 lg:px-0 lg:w-2/3 mt-15 '>
-              <h1 className='text-[1.05rem]  text-[#525252] lg:max-w-sm font-mont-regular pt-20 lg:pt-0'>
-                By hiring and managing talented people with skills specific to
-                your project, we build you a team that’s accomplished, agile and
-                scalable in both directions.
-              </h1>
-              <Button name='See how it works' />
-            </div>
-          </div>
-        </div>
-        <Image
-          src='/images/image 4.png'
-          alt='Picture of the author'
-          className='absolute right-28 scale-90 lg:scale-100 lg:right-0 top-52 lg:top-72'
-          width={350}
-          height={350}
-        />
-      </section>
-
-      {/* next section */}
+      {/* Team  section */}
+      <Team/>
+      {/* End of Team section */}
       <section className='relative'>
         <div className='max-w-[70rem] mx-auto py-36 flex flex-col lg:flex-row justify-between'>
           {/* First grid item */}
@@ -238,47 +214,9 @@ export default function Home () {
           </div>
         </div>
       </section>
-      {/* next section */}
-      <section className='relative lg:h-full bg-[#F6F6F6]'>
-        <div className='max-w-[70rem] mx-auto px-6 lg:px-0 py-10 lg:py-56 flex justify-between'>
-          {/* First grid item */}
-          <div className='lg:space-y-10 lg:w-2/3'>
-            <h1 className='text-4xl lg:text-5xl font-mont-bold'>Who we are</h1>
-            <h4 className='font-mont-regular text-gray-700 max-w-2xl leading-7 '>
-              Meet our international teams made up of 86 <br></br> innovators,
-              branched into 8 departments, that <br></br> influence the market
-              throughout 20 different countries.
-            </h4>
-            <div className='hidden lg:flex  justify-between py-8 lg:w-4/5'>
-              <div className='space-y-7'>
-                <h1 className='text-xl font-mont-bold'>Product design</h1>
-                <h1 className='text-xl font-mont-bold'>Web development</h1>
-                <h1 className='text-xl font-mont-bold'>Mobile development</h1>
-                <h1 className='text-xl font-mont-bold'>Quality assurance</h1>
-                <h1 className='text-xl font-mont-bold'>Marketing</h1>
-              </div>
-              <div className='space-y-7'>
-                <h1 className='text-xl font-mont-bold'>Project management</h1>
-                <h1 className='text-xl font-mont-bold'>Human resources</h1>
-                <h1 className='text-xl font-mont-bold'>Sales</h1>
-                <h1 className='text-xl font-mont-bold'>Fluffy friends</h1>
-              </div>
-            </div>
-            {/* arroe div */}
-            <div className='flex mt-[27rem] lg:mt-0 lg:gap-14'>
-              <Button name='Read About Us' />
-            </div>
-          </div>
-          {/* next div */}
-        </div>
-        <Image
-          src='/images/man2.png'
-          alt='Picture of the author'
-          className='absolute right-[9.5rem] lg:right-0 top-[20%] lg:top-[25%] scale-75 lg:scale-100'
-          width={350}
-          height={350}
-        />
-      </section>
+      {/* Abou section start here */}
+     <About/>
+     {/* About Section end hjere */}
       {/* Work section section */}
       <Work />
       {/* work section ends */}

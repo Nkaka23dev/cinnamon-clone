@@ -32,7 +32,7 @@ export default function Work (props) {
 
       {/* Small devices */}
 
-      <section className='bg-white py-40 relative block lg:hidden'>
+      <section className='bg-white py-24 relative block lg:hidden'>
         <div className='max-w-full mx-auto flex justify-center px-5'>
           <div className='max-w-full flex justify-center flex-col gap-10'>
             <Image
