@@ -10,6 +10,8 @@ import SubHero from '../components/SubHero'
 import Project from '../components/sections/project'
 import Team from '../components/sections/Team'
 import About from '../components/sections/About'
+import Office from '../components/sections/Office'
+import Tech from '../components/sections/Tech'
 
 export default function Home () {
   return (
@@ -38,7 +40,6 @@ export default function Home () {
         height='1300'
         width='1100'
       />
-
       <SubHero
         heading1='PRODUCT DESIGN'
         heading2='WEB DEVELOPMENT'
@@ -221,216 +222,11 @@ export default function Home () {
       <Work />
       {/* work section ends */}
       <Position />
-      {/* next section */}
+      {/* Office section*/}
+     <Office/>
+      {/* Office section end her section */}
 
-      <section className='max-w-[70rem] mx-auto flex flex-col py-36'>
-        <div>
-          <div className='z-10 mb-24'>
-            <h1 className='text-[3.5rem] font-bold font-mont-bold'>
-              Our offices
-            </h1>
-          </div>
-          {/* Next div is right here */}
-          <div className='grid px-12 grid-cols-3 gap-32 -mr-[37rem] '>
-            <div className='w-full'>
-              <div>
-                <img
-                  src='/images/city3.jpeg'
-                  className='min-w-full min-h-full max-w-full max-h-full scale-125'
-                />
-              </div>
-              <div className='mt-20 scale-125 flex gap-5 items-center'>
-                <svg
-                  className=''
-                  stroke='currentColor'
-                  fill='none'
-                  stroke-width='2'
-                  viewBox='0 0 24 24'
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
-                  height='20'
-                  width='18'
-                  xmlns='http://www.w3.org/2000/svg'
-                >
-                  <path d='M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z'></path>
-                  <circle cx='12' cy='10' r='3'></circle>
-                </svg>
-                <h1 className='text-xl font-mont-bold'>Zagreb</h1>
-              </div>
-              <div>
-                <h1 className='text-lg -ml-2 mt-3'>
-                  Slavonska avenija 6, 10000, zagreb, croacia
-                </h1>
-              </div>
-              <div className='mt-16 scale-125 flex gap-5 items-center'>
-                <Image
-                  src='/images/arrow_left.png'
-                  alt='Picture of the author'
-                  className=''
-                  width={45}
-                  height={45}
-                />
-                <Image
-                  src='/images/arrow_right.png'
-                  alt='Picture of the author'
-                  className=''
-                  width={45}
-                  height={45}
-                />
-              </div>
-            </div>
-            {/* next div */}
-            <div className='w-full'>
-              <div>
-                <img
-                  src='/images/city2.jpeg'
-                  className='min-w-full min-h-full max-w-full max-h-full scale-125'
-                />
-              </div>
-              <div className='mt-20 scale-125 flex gap-5 items-center'>
-                <svg
-                  className=''
-                  stroke='currentColor'
-                  fill='none'
-                  stroke-width='2'
-                  viewBox='0 0 24 24'
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
-                  height='20'
-                  width='18'
-                  xmlns='http://www.w3.org/2000/svg'
-                >
-                  <path d='M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z'></path>
-                  <circle cx='12' cy='10' r='3'></circle>
-                </svg>
-                <h1 className='text-xl font-mont-bold'>New York</h1>
-              </div>
-              <div>
-                <h1 className='text-lg -ml-2 mt-3'>
-                  Slavonska avenija 6, 10000, zagreb, croacia
-                </h1>
-              </div>
-            </div>
-            {/* next div */}
-            <div className='w-full'>
-              <div>
-                <img
-                  src='/images/city11.jpeg'
-                  className='min-w-full min-h-full max-w-full max-h-full scale-125'
-                />
-              </div>
-              <div className='mt-20 scale-125 flex gap-5 items-center'>
-                <svg
-                  className=''
-                  stroke='currentColor'
-                  fill='none'
-                  stroke-width='2'
-                  viewBox='0 0 24 24'
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
-                  height='20'
-                  width='18'
-                  xmlns='http://www.w3.org/2000/svg'
-                >
-                  <path d='M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z'></path>
-                  <circle cx='12' cy='10' r='3'></circle>
-                </svg>
-                <h1 className='text-xl font-mont-bold'>Zagreb</h1>
-              </div>
-              <div>
-                <h1 className='text-lg -ml-2 mt-3'>
-                  Slavonska avenija 6, 10000, zagreb, croacia
-                </h1>
-              </div>
-            </div>
-            {/* end o grid div */}
-          </div>
-        </div>
-      </section>
-
-      {/* Next section */}
-
-      <section className='max-w-[70rem] pb-40 mx-auto flex flex-col '>
-        <div>
-          <div className=''>
-            <h1 className='text-[3.5rem] font-bold font-mont-bold pb-16'>
-              Stay in the loop <br></br> on tech topics
-            </h1>
-          </div>
-          {/* Next div is right here */}
-          <div className='grid  grid-cols-3 gap-5'>
-            <div className=''>
-              <img src='/images/img1.webp' className='' />
-              <div className='mt-5 flex gap-5 items-center'>
-                <h1 className='text-sm font-mont-bold'>Sales</h1>
-              </div>
-              <div className='mt-2 text-xl flex gap-3'>
-                <h1 className='text-[1rem] text-gray-700 font-mont-regular'>
-                  Matija Bermanec & l...
-                </h1>
-                <div className='flex items-center gap-3'>
-                  <div className='bg-yellow-400 rounded-full w-[0.4rem] h-[0.4rem]'></div>
-                  <h1 className='text-[1rem] text-gray-700 '>2022-10-13</h1>
-                </div>
-                <div className='flex items-center gap-3'>
-                  <div className='bg-yellow-400 rounded-full w-[0.4rem] h-[0.4rem]'></div>
-                  <h1 className='text-[1rem] text-gray-700 '>6min</h1>
-                </div>
-              </div>
-              <div className='text-2xl mt-4 font-mont-bold'>
-                Difference in Hiring an <br></br> Agency vs. Freelancers 2.0
-              </div>
-            </div>
-            {/* next div */}
-            <div className=''>
-              <img src='/images/flutter.webp' className='' />
-              <div className='mt-5 flex gap-5 items-center'>
-                <h1 className='text-sm font-mont-bold'>Development</h1>
-              </div>
-              <div className='mt-2 text-xl flex gap-3'>
-                <h1 className='text-[1rem] text-gray-700 font-mont-regular'>
-                  Samantha Holstead
-                </h1>
-                <div className='flex items-center gap-3'>
-                  <div className='bg-yellow-400 rounded-full w-[0.4rem] h-[0.4rem]'></div>
-                  <h1 className='text-[1rem] text-gray-700 '>2022-10-03</h1>
-                </div>
-                <div className='flex items-center gap-3'>
-                  <div className='bg-yellow-400 rounded-full w-[0.4rem] h-[0.4rem]'></div>
-                  <h1 className='text-[1rem] text-gray-700 '>3min</h1>
-                </div>
-              </div>
-              <div className='text-2xl mt-4 font-mont-bold'>
-                Cinnamon Flutter Template <br></br>Overview
-              </div>
-            </div>
-            {/* next div */}
-            <div className=''>
-              <img src='/images/tinder.webp' className='' />
-              <div className='mt-5 flex gap-5 items-center'>
-                <h1 className='text-sm font-mont-bold'>Design</h1>
-              </div>
-              <div className='mt-2 text-xl flex gap-3'>
-                <h1 className='text-[1rem] text-gray-700 font-mont-regular'>
-                  Jan Marine
-                </h1>
-                <div className='flex items-center gap-3'>
-                  <div className='bg-yellow-400 rounded-full w-[0.4rem] h-[0.4rem]'></div>
-                  <h1 className='text-[1rem] text-gray-700 '>2022-9-15</h1>
-                </div>
-                <div className='flex items-center gap-3'>
-                  <div className='bg-yellow-400 rounded-full w-[0.4rem] h-[0.4rem]'></div>
-                  <h1 className='text-[1rem] text-gray-700 '>10min</h1>
-                </div>
-              </div>
-              <div className='text-2xl mt-4 font-mont-bold'>
-                How Tinder Swindled User <br></br> Experience
-              </div>
-            </div>
-            {/* end o grid div */}
-          </div>
-        </div>
-      </section>
+      <Tech/>
       <Project />
       {/* Next Section */}
       <Footer />

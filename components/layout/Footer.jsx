@@ -8,7 +8,7 @@ export default function Footer (props) {
     <>
       {/* Next section */}
       <section className='background-image hidden lg:block'>
-        <div className='max-w-[70rem] mx-auto flex justify-between pt-20 pb-5'>
+        <div className='max-w-[70rem] mx-auto flex justify-between pt-24 pb-5'>
           <div className='text-white w-2/5 flex flex-col justify-between'>
             <div>
               <h1 className='text-3xl font-bold font-mont-bold'>CINNAMON</h1>

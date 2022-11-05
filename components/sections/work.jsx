@@ -26,7 +26,7 @@ export default function Work (props) {
         </div>
         <img
           src='/images/cinama2.png'
-          className=' top-40 absolute h-[22rem] w-[35rem] right-0 bottom-0'
+          className=' top-40 absolute h-[22.3rem] w-[35rem] right-0 bottom-0'
         />
       </section>
 

@@ -5,10 +5,10 @@ import Image from 'next/image';
 export default function Position (props) {
     return(
      <>
-      <section className='background-image py-24'>
+      <section className='background-image pt-28 pb-40'>
         <div className='max-w-[70rem] px-5 lg:px-0 mx-auto lg:pt-[5rem] flex flex-col lg:flex-row justify-between'>
           <div className='text-white space-y-8 lg:w-3/5'>
-            <h1 className='text-4xl lg:text-6xl tracking-wide font-bold font-mont-bold'>
+            <h1 className='text-4xl lg:text-[3.1rem] tracking-wide font-bold font-mont-bold'>
               We’re growing
             </h1>
             <div className='space-y-5'>
