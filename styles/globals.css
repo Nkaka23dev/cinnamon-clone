@@ -1,3 +1,140 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn-lg {
+    @apply py-20 inline-block px-10 rounded-full text-sm font-semibold uppercase tracking-wider
+  }
+  .btn-sm {
+  @apply rounded-full py-2 px-3 uppercase text-xs  font-bold cursor-pointer tracking-wider;
+  }
+  .btn--bordered {
+    @apply text-primary border-primary md:border-2 hover:bg-primary hover:text-white
+  } 
+  .btn-square {
+    @apply bg-indigo-500 mt-4 py-2 px-6 rounded text-white  font-bold cursor-pointer tracking-wider
+  }
+}
+input[type="text"]:focus ~.input-text{
+  @apply text-[#5135ff] text-sm font-semibold transform -translate-y-4 -translate-x-1
+}
+@font-face {
+  font-family:"mont-bold";
+  src: url("/MontBold.woff2");
+}
+@font-face {
+  font-family:"mont-heavy";
+  src: url("/MontHeavy.woff2");
+}
+@font-face {
+  font-family:"mont-regular";
+  src: url("/MontRegular.woff2");
+}
+@font-face {
+  font-family:"mont-semibold";
+  src: url("/MontSemiBold.woff2");
+}
+
+.background-image {
+  background-color: #1C1C1C;
+  background-image: url(/images/noise.png);
+  color: #F6F6F6;
+ 
+}
+.bg-green-200 {
+  --tw-bg-opacity: 0.7;
+  background-color: rgb(134 239 172/ var(--tw-bg-opacity));
+}
+.transition {
+  transition: all 0.6s ease-in;
+}
+.leading-9 {
+  line-height: 4.25rem/* 36px */;
+}
+.text-4xl {
+  font-size: 2.45rem/* 36px */;
+  line-height: 3.45rem/* 40px */;
+}
+
+.sub-title{
+  color: #CFCFCF;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 640px;
+  margin-bottom: 32px;
+}
+.n{
+ background-color: #5135ff;
+
+}
+.css-18deho8 {
+  border-width: 8px 0px 8px 13px;
+  border-style: solid;
+  border-color: transparent transparent transparent #5135FF;
+ 
+  border-color: transparent transparent transparent #FFFFFF;
+}
+.rounded-button{
+  background: #FFFFFF;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  position: relative;
+  box-shadow: inset 0 0 0 2px #5135ff;
+  -webkit-transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.border-blue{
+  box-shadow: inset 0 0 0 2px #5135ff;
+}
+.border--white{
+  box-shadow: inset 0 0 0 2px #ffffff;
+}
+.bg--dark {
+  background: #1C1C1C;
+}
+.bg--white {
+  background: #ffffff;
+}
+.rounded-button__border{
+  
+}
+.rounded-button__play{
+  border-width: 8px 0px 8px 13px;
+  border-style: solid;
+  border-color: transparent transparent transparent #5135FF;
+  position: absolute;
+  left: calc(50% + 2px);
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+} 
+.play{
+  border-color: transparent transparent transparent #FFFFFF;
+}
+.play--blue{
+  border-color: transparent transparent transparent #5135FF;
+}
+
+.css-8x5vz5 {
+  font-size: 54px;
+  line-height: 70px;
+  margin-bottom: 32px;
+}
+.css-dysplg {
+  font-family: 'MontBold';
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 24px;
+}
+.css-nqinkkkk {
+  color: #CFCFCF;
+  font-size: 16px;
+  line-height: 26px;
+}
